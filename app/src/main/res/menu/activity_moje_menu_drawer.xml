@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Lista wydziałów">
+        <menu>
+            <item
+                android:id="@+id/nav_biol"
+                android:icon="@drawable/ic_menu_biol"
+                android:title="Biologii i Ochrony Środowiska" />
+            <item
+                android:id="@+id/nav_chem"
+                android:icon="@drawable/ic_menu_chem"
+                android:title="Chemii" />
+            <item
+                android:id="@+id/nav_eko"
+                android:icon="@drawable/ic_menu_eko"
+                android:title="Ekonomii i Socjologii" />
+            <item
+                android:id="@+id/nav_fil"
+                android:icon="@drawable/ic_menu_fil"
+                android:title="Filologiczny" />
+            <item
+                android:id="@+id/nav_hist"
+                android:icon="@drawable/ic_menu_hist"
+                android:title="Filozoficzno-Historyczny" />
+            <item
+                android:id="@+id/nav_fiz"
+                android:icon="@drawable/ic_menu_fiz"
+                android:title="Fizyki i Informatyki" />
+            <item
+                android:id="@+id/nav_mat"
+                android:icon="@drawable/ic_menu_mat"
+                android:title="Matematyki i Informatyki" />
+            <item
+                android:id="@+id/nav_geo"
+                android:icon="@drawable/ic_menu_geo"
+                android:title="Nauk Geograficznych" />
+            <item
+                android:id="@+id/nav_wych"
+                android:icon="@drawable/ic_menu_wych"
+                android:title="Nauk o Wychowaniu" />
+            <item
+                android:id="@+id/nav_adm"
+                android:icon="@drawable/ic_menu_adm"
+                android:title="Prawa i Administracji" />
+            <item
+                android:id="@+id/nav_smp"
+                android:icon="@drawable/ic_menu_smp"
+                android:title="Studia Międzynarodowe" />
+            <item
+                android:id="@+id/nav_zarz"
+                android:icon="@drawable/ic_menu_zarz"
+                android:title="Zarządzania" />
+        </menu>
+    </item>
+
+</menu>
