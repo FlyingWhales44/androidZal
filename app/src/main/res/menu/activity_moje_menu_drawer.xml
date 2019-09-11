@@ -39,7 +39,7 @@
                 android:title="Nauk Geograficznych" />
             <item
                 android:id="@+id/nav_wych"
-                android:icon="@drawable/ic_menu_wych"
+                android:icon="@drawable/ic_men_wych"
                 android:title="Nauk o Wychowaniu" />
             <item
                 android:id="@+id/nav_adm"

@@ -7,7 +7,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="wydzial chemi"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="23dp"
+        android:text="Adres: Tamka 12, 91-403 Łódź"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="162dp"
+        android:text="Telefon: 42 635 57 44"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textSize="30sp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_chem"
+        android:layout_width="match_parent"
+        android:layout_height="496dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="235dp" />
 
 </RelativeLayout>

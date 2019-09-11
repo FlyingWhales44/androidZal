@@ -9,19 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class FizFragment extends Fragment {
+public class EkoFragment extends Fragment {
 
     MapView mMapView;
     private GoogleMap googleMap;
@@ -29,9 +26,9 @@ public class FizFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_fiz, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_eko, container, false);
 
-        mMapView = (MapView) rootView.findViewById(R.id.map_fiz);
+        mMapView = (MapView) rootView.findViewById(R.id.map_eko);
         mMapView.onCreate(savedInstanceState);
 
         mMapView.onResume(); // needed to get the map to display immediately
@@ -49,8 +46,8 @@ public class FizFragment extends Fragment {
 
 
                 // For dropping a marker at a point on the Map
-                LatLng fizLoc = new LatLng(51.776838, 19.489253);
-                googleMap.addMarker(new MarkerOptions().position(fizLoc).title("Wydział Fizyki i Informatyki").snippet(""));
+                LatLng fizLoc = new LatLng(51.775156, 19.464432);
+                googleMap.addMarker(new MarkerOptions().position(fizLoc).title("Wydział Ekonomiczno-Socjologiczny Uniwersytetu Łódzkiego").snippet(""));
 
                 // For zooming automatically to the location of the marker
                 CameraPosition cameraPosition = new CameraPosition.Builder().target(fizLoc).zoom(17).build();

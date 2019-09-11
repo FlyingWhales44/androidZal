@@ -12,6 +12,7 @@ import android.os.Message;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import java.text.MessageFormat;
@@ -55,6 +56,46 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_chem:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ChemFragment()).commit();
+                break;
+            case R.id.nav_adm:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AdmFragment()).commit();
+                break;
+            case R.id.nav_biol:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new BiolFragment()).commit();
+                break;
+            case R.id.nav_eko:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new EkoFragment()).commit();
+                break;
+            case R.id.nav_fil:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FilFragment()).commit();
+                break;
+            case R.id.nav_geo:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new GeoFragment()).commit();
+                break;
+            case R.id.nav_hist:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new HistFragment()).commit();
+                break;
+            case R.id.nav_mat:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new MatFragment()).commit();
+                break;
+            case R.id.nav_smp:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SmpFragment()).commit();
+                break;
+            case R.id.nav_wych:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new WychFragment()).commit();
+                break;
+            case R.id.nav_zarz:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ZarzFragment()).commit();
                 break;
 
         }
